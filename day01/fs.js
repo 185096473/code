@@ -1,5 +1,6 @@
 var http=require("http");
 var fs=require("fs");
+//读取文件
 http.createServer((req,res)=>{
     fs.readFile("./note.md",(err,data)=>{
         res.writeHead(200,{"Content-type":"text/html;charset=utf-8"})

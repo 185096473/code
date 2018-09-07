@@ -24,13 +24,6 @@ http.createServer((req,res)=>{
     // }else{
     //     console.log("没有此学员")
     // }
-    var a=5
-    switch(typeof(a)==Number){
-        case a>1:
-        console.log(a)
-          return a ;
-          
-        break;
-    }
+  
     res.end()
 }).listen(3000,"127.0.0.1")
